@@ -10,4 +10,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.ruizvilla.frontino_para_explorar.MainActivity">
 
+    <TextView
+        android:text="BIENVENIDO!!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp"
+        android:textSize="50dp"
+        android:id="@+id/textView" />
 </RelativeLayout>

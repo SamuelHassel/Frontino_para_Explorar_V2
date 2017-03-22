@@ -7,4 +7,7 @@
     <string name="repassword">Repetir password</string>
     <string name="correo">Correo electrónico</string>
     <string name="cancelar">Cancelar</string>
+    <string name="miperfil">Mi Perfil</string>
+    <string name="cerrarS">Cerrar Sesión</string>
+    <string name="salir">Salir</string>
 </resources>
