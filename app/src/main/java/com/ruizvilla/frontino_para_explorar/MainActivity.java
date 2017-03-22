@@ -8,7 +8,7 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
-
+Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +25,20 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        return super.onOptionsItemSelected(item);
+        int id = item.getItemId();
 
-
-
+        switch (id){
+            case R.id.mCerrar:
+                intent = new Intent (MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mMiPerfil:
+                intent = new Intent (MainActivity.this, PerfilActivity.class);
+                startActivity(intent);
+                break;
+        }
+        return super.onOptionsItemSelected(item); //
     }
 }
 
