@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class PerfilActivity extends AppCompatActivity {
     Intent intent;
@@ -51,10 +52,14 @@ public class PerfilActivity extends AppCompatActivity {
 
             case R.id.mPrincipal:
                 intent = new Intent (PerfilActivity.this, MainActivity.class);
+                // No se porque para volver a principal tiene que estar los putExtra
+                intent.putExtra("username", username);
+                intent.putExtra("correo", correo);
                 startActivity(intent);
+                Toast.makeText(this, "pues el boton funciona....", Toast.LENGTH_SHORT).show();
                 break;
         }
-        return super.onOptionsItemSelected(item); //
+        return super.onOptionsItemSelected(item);
     }
 
 }
