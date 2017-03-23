@@ -56,7 +56,7 @@ public class PerfilActivity extends AppCompatActivity {
                 intent.putExtra("username", username);
                 intent.putExtra("correo", correo);
                 startActivity(intent);
-                Toast.makeText(this, "pues el boton funciona....", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(this, "pues el boton funciona....", Toast.LENGTH_SHORT).show();
                 break;
         }
         return super.onOptionsItemSelected(item);
