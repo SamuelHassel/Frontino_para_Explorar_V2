@@ -20,6 +20,7 @@ Intent intent;
         correo = extras.getString("correo", correo);
     }
 
+    //Esta parte es** la que relaciona un activity con el menu OVERFLOW
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);

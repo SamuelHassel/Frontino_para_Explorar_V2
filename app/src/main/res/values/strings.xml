@@ -9,5 +9,6 @@
     <string name="cancelar">Cancelar</string>
     <string name="miperfil">Mi Perfil</string>
     <string name="cerrarS">Cerrar Sesión</string>
+    <string name="p_principal">Principal</string>
     <string name="salir">Salir</string>
 </resources>
