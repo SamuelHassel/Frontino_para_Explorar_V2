@@ -34,7 +34,21 @@ Intent intent;
         switch (id){
             case R.id.mCerrar:
                 intent = new Intent (MainActivity.this, LoginActivity.class);
-
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mSitios:
+                intent = new Intent (MainActivity.this, SitiosActivity.class);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mBares:
+                intent = new Intent (MainActivity.this, Bares.class);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mHoteles:
+                intent = new Intent (MainActivity.this, Hoteles.class);
                 startActivity(intent);
                 finish();
                 break;

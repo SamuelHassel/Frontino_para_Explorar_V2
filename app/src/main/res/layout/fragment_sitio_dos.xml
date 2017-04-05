@@ -3,18 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ruizvilla.frontino_para_explorar.SitioDos">
+    tools:context="com.ruizvilla.frontino_para_explorar.SitioDos"
+    android:background="@color/colorfondo">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:text="La mejor esquina" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="match_parent"
         android:layout_height="345dp"
-        app:srcCompat="@drawable/t5" />
+        app:srcCompat="@drawable/r1" />
 
 </FrameLayout>

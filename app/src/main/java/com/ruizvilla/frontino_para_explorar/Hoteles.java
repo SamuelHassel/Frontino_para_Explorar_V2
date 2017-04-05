@@ -20,8 +20,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class SitiosActivity extends AppCompatActivity {
-
+public class Hoteles extends AppCompatActivity {
     Intent intent;
     String username,correo;
     /**
@@ -58,37 +57,12 @@ public class SitiosActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
     }
 
-/*@Override
+
+
+//________________________INICIOMENU
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_sitios, menu);
-        return true;
-    }
-
-
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.mVolver) {
-
-            intent = new Intent (SitiosActivity.this, MainActivity.class);
-            startActivity(intent);
-            finish();
-            break;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }*/
-
-    //Esta parte es** la que relaciona un activity con el menu OVERFLOW
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_sitios, menu);
+        getMenuInflater().inflate(R.menu.menu_hoteles, menu);
         return true;
     }
 
@@ -98,18 +72,18 @@ public class SitiosActivity extends AppCompatActivity {
 
         switch (id){
             case R.id.mVolver:
-                intent = new Intent (SitiosActivity.this, MainActivity.class);
+                intent = new Intent(Hoteles.this, MainActivity.class);
                 // No se porque para volver a principal tiene que estar los putExtra
                 intent.putExtra("username", username);
                 intent.putExtra("correo", correo);
                 startActivity(intent);
                 finish();
                 break;
+
         }
         return super.onOptionsItemSelected(item); //
     }
-
-
+//____________________________________________FINMENU
 
 
     /**
@@ -128,11 +102,11 @@ public class SitiosActivity extends AppCompatActivity {
             // Return a PlaceholderFragment (defined as a static inner class below).
             //return PlaceholderFragment.newInstance(position + 1);
             switch (position){
-                case 0: SitioUno p1 = new SitioUno();
+                case 0: HotelUno p1 = new HotelUno();
                     return p1;
-                case 1: SitioDos p2 = new SitioDos();
+                case 1: HotelDos p2 = new HotelDos();
                     return p2;
-                case 2: SitioUno p3 = new SitioUno();
+                case 2: HotelTres p3 = new HotelTres();
                     return p3;
                 default: return null;
             }
@@ -148,11 +122,11 @@ public class SitiosActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "SitioUno";
+                    return "HotelUno";
                 case 1:
-                    return "SitioDos";
+                    return "HotelDos";
                 case 2:
-                    return "SitioTres";
+                    return "HotelTres";
             }
             return null;
         }
