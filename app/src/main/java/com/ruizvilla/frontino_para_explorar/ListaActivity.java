@@ -1,17 +1,21 @@
 package com.ruizvilla.frontino_para_explorar;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.view.menu.ExpandedMenuView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ListaActivity extends AppCompatActivity {
 // Nuevo adapador
@@ -40,6 +44,30 @@ public class ListaActivity extends AppCompatActivity {
        // ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, datos);
         Adapter adapter = new Adapter(this, datos);
         listView.setAdapter(adapter);
+
+        ///PROGRAMANDO LOS LISTENER PARA LA LISTA
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            // Esto de abajo es la implementacion y se hizo automaticamente
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // Ojo con eso del contexto, ojo que para imprimir el in se pasa a entero
+                String opcion =  ((Lista_Entrada)parent.getItemAtPosition(position)).getNombre();
+
+                //Toast.makeText(getApplicationContext(), String.valueOf(position),Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(getApplicationContext(), opcion ,Toast.LENGTH_SHORT).show();
+
+  /* // Para que los botones envien a lugares
+      switch (position){
+          // No me deja ir a los activity main
+                    case 1: Intent intent = new Intent (ListaActivity.this, Bares.class );
+                        startActivity(intent);
+                        break;
+                }
+                //____________________________________________________fin del switch*/
+            }
+        });
     }
  //NECESITO TOMAR ESTA INFORMACION Y ADAPTARLA CON UN ADAPTADOR ENTONCES SE CREARA CLASE ADAPADOR
 
