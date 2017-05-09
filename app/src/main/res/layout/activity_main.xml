@@ -12,6 +12,7 @@
     android:background="#14CCAB"
     tools:context="com.ruizvilla.frontino_para_explorar.MainActivity">
 
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
@@ -33,4 +34,7 @@
         android:textColorLink="@android:color/background_dark"
         android:textSize="18sp"
         android:textStyle="bold" />
+
+
+
 </RelativeLayout>

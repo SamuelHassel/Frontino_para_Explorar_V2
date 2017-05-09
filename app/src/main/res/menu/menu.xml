@@ -6,6 +6,15 @@
         android:title="@string/miperfil"
         />
     <item
+        android:id="@+id/mSitios"
+        android:title="@string/mSitios"/>
+    <item
+        android:id="@+id/mBares"
+        android:title="@string/mBares"/>
+    <item
+        android:id="@+id/mHoteles"
+        android:title="@string/mHoteles"/>
+    <item
         android:id="@+id/mCerrar"
         android:title="@string/cerrarS"/>
 </menu>
