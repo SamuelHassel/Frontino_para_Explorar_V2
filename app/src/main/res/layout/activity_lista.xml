@@ -18,3 +18,6 @@ tools:context="com.ruizvilla.frontino_para_explorar.ListaActivity">
 </android.support.constraint.ConstraintLayout>
 
 <!--Notese que no se cargan los String desde aca sino que se cargara desde el java-->
+
+    <!--////  AO_ Aca solo se invoca el componente WIZARD central que es ListView, con id/List
+    -->

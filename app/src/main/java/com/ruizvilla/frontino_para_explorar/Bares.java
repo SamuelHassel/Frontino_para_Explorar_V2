@@ -42,6 +42,7 @@ public class Bares extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // ACTIVITY SITIOS ES COMUN PARA BARES, HOTELES, SITIOS
         setContentView(R.layout.activity_sitios);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

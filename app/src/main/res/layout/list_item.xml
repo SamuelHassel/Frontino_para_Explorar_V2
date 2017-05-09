@@ -47,3 +47,7 @@
     </LinearLayout>
 
 </LinearLayout>
+
+    <!--////  D) Se crea el item con imagen y varios textview que se replicaran con darga
+     para ser cargados en el Objeto ppal ListViwe
+     Explican tmabien lo de los margenes con marginStart 5dp es la separaicon -->
